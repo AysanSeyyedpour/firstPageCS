@@ -75,11 +75,74 @@ header {
                 }
             }
         }
-        .usefulPoints {
+        .back {
+            background-color: rgba(255, 255, 255, 0.979);
+            width: 237.5px;
             position: relative;
-            top: 550px;
+            right: 27vw;
+            top: -5px;
+            display: none;
+            .row {
+                cursor: pointer;
+                width: 230px;
+                align-items: center;
+                font-family: 'yekan';
+                .cBorder {
+                    border-right: 1px solid black;
+                }
+                .items:hover {
+                    background-color: #77b1e0e5;
+                    color: #e0161d;
+                }
+            }
+        }
+        .projectBar {
+            position: relative;
+            top: -292px;
+            right: 34vw;
+            display: none;
+            ul {
+                li {
+                    padding: 1rem;
+                    font-family: 'yekan';
+                    cursor: pointer;
+                }
+                li:hover {
+                    background-color: #66ade4e5;
+                    color: #e0161d;
+                }
+            }
+        }
+        .flagBar {
+            position: relative;
+            top: -495px;
+            right: 81vw;
+            display: none;
+            ul {
+                border-radius: 10px;
+                background-color: #d4d1d1bb;
+                li {
+                    padding: .5rem;
+                    font-family: 'yekan';
+                    cursor: pointer;
+                    align-items: center;
+                    background-color: #f6f3f3;
+                    border-radius: 10px;
+                    img {
+                        margin-right: 13px;
+                    }
+                }
+                li:hover {
+                    background-color: #d3d4d4e5;
+                }
+            }
+        }
+        .usefulPoints {
+            position: absolute;
+            top: 590px;
             left: 0;
             right: 0;
+            z-index: 1;
             margin-bottom: 0%;
             .usefulPointsItems {
                 width: 60px;
@@ -119,6 +182,8 @@ header {
             top: 520px;
             background-image: url(/images&icons/about-us-background.png);
             background-color: white;
+            z-index: 1;
+            margin-top: 50px;
             @include MediaQuery($xl) {
                 height: 600px;
             }
@@ -132,6 +197,7 @@ header {
                 // margin-right: 8vw;
                 .firstColAboutUs {
                     margin-top: -50px;
+                    font-family: 'yekan';
                     // margin-right: 40px;
                     .head {
                         padding-bottom: 20px;
@@ -200,18 +266,18 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 800px;
+    height: 900px;
     position: relative;
-    @include MediaQuery($sm) {
-        height: 1000px;
+    @include MediaQuery($xl) {
+        height: 1390px;
     }
     .inner1 {
         position: absolute;
-        top: 120px;
+        top: 420px;
         right: 10%;
         left: 10%;
         @include MediaQuery($lg) {
-            top: 100px;
+            top: 620px;
         }
         .items {
             float: right;
