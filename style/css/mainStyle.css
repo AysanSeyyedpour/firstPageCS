@@ -1,0 +1,364 @@
+body,
+html {
+  margin: 0%;
+  padding: 0%;
+  font-family: "yekan";
+}
+
+header .headerBackground {
+  background-image: url(/images&icons/image-slider.jpg);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 670px;
+}
+header .headerBackground .bgHeader {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 4px solid #d81010;
+}
+header .headerBackground .bgHeader .navigationBar {
+  height: 85px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  header .headerBackground .bgHeader .navigationBar {
+    flex-wrap: nowrap;
+  }
+}
+header .headerBackground .bgHeader .navigationBar .navBarList {
+  float: right;
+  display: block;
+  align-items: center;
+  margin-top: 15px;
+  margin-right: 70px;
+}
+header .headerBackground .bgHeader .navigationBar .navBarList li {
+  display: inline;
+  border-left: 1px solid black;
+}
+header .headerBackground .bgHeader .navigationBar .navBarList li a {
+  color: #0c0c0c;
+  font-family: "yekan";
+  text-decoration: none;
+  padding: 10px;
+}
+header .headerBackground .bgHeader .navigationBar .navBarList li:hover a {
+  color: #b60707;
+}
+header .headerBackground .bgHeader .navigationBar .navBarList li:last-child {
+  border-left: none;
+}
+@media only screen and (max-width: 768px) {
+  header .headerBackground .bgHeader .navigationBar .navBarList {
+    display: none;
+  }
+}
+header .headerBackground .bgHeader .navigationBar .hamburger {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  header .headerBackground .bgHeader .navigationBar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+header .headerBackground .bgHeader .navigationBar .navLastPart {
+  cursor: pointer;
+  margin-right: 50px;
+}
+header .headerBackground .bgHeader .navigationBar .navLastPart i {
+  color: #327ab6;
+}
+@media only screen and (max-width: 768px) {
+  header .headerBackground .bgHeader .navigationBar .navLastPart {
+    clear: both;
+    margin-right: 0px;
+  }
+}
+header .headerBackground .bgHeader .navigationBar .navLastPart:hover i {
+  color: #213f57;
+}
+header .headerBackground .usefulPoints {
+  position: relative;
+  top: 550px;
+  left: 0;
+  right: 0;
+  margin-bottom: 0%;
+}
+header .headerBackground .usefulPoints .usefulPointsItems {
+  width: 60px;
+  height: 60px;
+  border: 3px solid white;
+  border-radius: 100%;
+  background-color: #cccccc;
+  box-shadow: 0px 3px 3px -3px #101010;
+  cursor: pointer;
+  z-index: 1;
+}
+header .headerBackground .usefulPoints .usefulPointsItems a {
+  position: relative;
+}
+header .headerBackground .usefulPoints .usefulPointsItems a .img1 {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+header .headerBackground .usefulPoints .usefulPointsItems a .img2 {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+header .headerBackground .usefulPoints .usefulPointsItems a .img3 {
+  position: absolute;
+  top: 13px;
+  right: 16px;
+}
+header .headerBackground .usefulPoints .usefulPointsItems:hover {
+  background-color: #e0161d;
+}
+header .headerBackground .bgAboutUs {
+  width: 100%;
+  position: relative;
+  top: 520px;
+  background-image: url(/images&icons/about-us-background.png);
+  background-color: white;
+}
+@media only screen and (max-width: 992px) {
+  header .headerBackground .bgAboutUs {
+    height: 600px;
+  }
+}
+header .headerBackground .bgAboutUs .aboutUs {
+  margin-top: 0;
+  height: 370px;
+  margin: auto;
+  padding: 30px;
+  position: relative;
+  top: 50px;
+}
+header .headerBackground .bgAboutUs .aboutUs .firstColAboutUs {
+  margin-top: -50px;
+}
+header .headerBackground .bgAboutUs .aboutUs .firstColAboutUs .head {
+  padding-bottom: 20px;
+}
+header .headerBackground .bgAboutUs .aboutUs .firstColAboutUs .head .line {
+  width: 45px;
+  height: 4px;
+  background-color: #e0161d;
+}
+header .headerBackground .bgAboutUs .aboutUs .firstColAboutUs p {
+  font-size: 0.9rem;
+  color: #252525;
+  padding-bottom: 10px;
+}
+header .headerBackground .bgAboutUs .aboutUs .firstColAboutUs button {
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+header .headerBackground .bgAboutUs .aboutUs .firstColAboutUs button:hover {
+  background-color: #e9e9e9;
+}
+@media only screen and (max-width: 768px) {
+  header .headerBackground .bgAboutUs .aboutUs .rowSecondPart {
+    margin-top: 50px;
+  }
+}
+header .headerBackground .bgAboutUs .aboutUs .rowSecondPart .secondColAboutUs {
+  margin-top: -20px;
+}
+@media only screen and (max-width: 768px) {
+  header .headerBackground .bgAboutUs .aboutUs .rowSecondPart .secondColAboutUs img {
+    width: 50%;
+    height: 50%;
+  }
+}
+header .headerBackground .bgAboutUs .aboutUs .rowSecondPart .secondColAboutUs .text {
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 768px) {
+  header .headerBackground .bgAboutUs .aboutUs .rowSecondPart .secondColAboutUs .text {
+    font-size: 0.8rem;
+  }
+}
+header .headerBackground .bgAboutUs .aboutUs .rowSecondPart .secondColAboutUs .text span {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 992px) {
+  header .headerBackground .bgAboutUs .aboutUs .rowSecondPart .secondColAboutUs .text span {
+    font-size: 1.5rem;
+  }
+}
+header .headerBackground .bgAboutUs .aboutUs .rowSecondPart .thirdColAboutUs {
+  margin-top: -60px;
+}
+@media only screen and (max-width: 768px) {
+  header .headerBackground .bgAboutUs .aboutUs .rowSecondPart .thirdColAboutUs img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+section {
+  background-image: url(/images&icons/services-background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+  position: relative;
+}
+@media only screen and (max-width: 425px) {
+  section {
+    height: 1000px;
+  }
+}
+section .inner1 {
+  position: absolute;
+  top: 120px;
+  right: 10%;
+  left: 10%;
+}
+@media only screen and (max-width: 768px) {
+  section .inner1 {
+    top: 100px;
+  }
+}
+section .inner1 .items {
+  float: right;
+  align-items: center;
+  cursor: pointer;
+  align-items: center;
+  align-content: center;
+}
+section .inner1 .items .imageBg {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50px;
+  position: relative;
+}
+section .inner1 .items .imageBg img {
+  position: absolute;
+  top: 30px;
+  right: 31px;
+}
+section .inner1 .items p {
+  font-size: 1.2rem;
+  padding-top: 20px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  section .inner1 .items p {
+    font-size: 0.85rem;
+  }
+}
+section .inner1 .items:hover .imageBg {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+section .inner1 .items:hover p {
+  color: white;
+}
+
+.part-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.customerPart {
+  border-bottom: 1px solid #cccc;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.customerPart .title {
+  margin: auto;
+}
+.customerPart .title .customerRedLine {
+  width: 35px;
+  height: 3.5px;
+  background-color: #b8191e;
+  position: relative;
+  left: -75px;
+}
+.customerPart .Carousel {
+  margin: 5rem auto;
+  width: 100%;
+}
+.customerPart .Carousel .inner {
+  background-image: url(/images&icons/customer.png);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  overflow-x: hidden;
+  height: 90px;
+  width: 65vw;
+  margin: auto;
+}
+.customerPart .Carousel img {
+  cursor: pointer;
+}
+
+footer {
+  margin: 5rem auto 0px;
+}
+footer .contactUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+footer .contactUs h2 {
+  margin: auto;
+}
+footer .contactUs .footerRedLine {
+  width: 58px;
+  height: 4px;
+  background-color: #e0161d;
+  position: relative;
+  right: 48%;
+  top: 2px;
+  margin-top: 3px;
+}
+footer .footerMiddlePart {
+  background-image: url(/images&icons/contact-us-background.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100%;
+}
+footer .footerMiddlePart .innerTitle {
+  margin-right: -30px;
+  margin-bottom: 1.5rem;
+}
+footer .footerLastPart1 {
+  margin-bottom: 0%;
+  width: 100%;
+  background-color: #f3f3f3;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .footerLastPart1 p {
+  color: #9b9b9b;
+  padding: 10px;
+  font-size: 0.92rem;
+}
+footer .footerLastPart1 p span {
+  font-size: 1.5rem;
+}
+footer .footerLastPart2 {
+  margin-bottom: 0%;
+  width: 100%;
+  height: 5px;
+  background-color: #e0161d;
+}
+
+/*# sourceMappingURL=mainStyle.css.map */

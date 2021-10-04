@@ -1,0 +1,77 @@
+body,
+html {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'yekan';
+}
+
+header .headerBackground {
+  background-image: url(/images&icons/image-slider.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 680px;
+}
+
+header .headerBackground .bgHeader {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 4px solid #d81010;
+}
+
+header .headerBackground .bgHeader .navigationBar {
+  height: 90px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+
+header .headerBackground .bgHeader .navigationBar .navBarList {
+  float: right;
+  display: block;
+  align-items: center;
+  margin-top: 15px;
+}
+
+header .headerBackground .bgHeader .navigationBar .navBarList li {
+  display: inline;
+  border-left: 1px solid black;
+}
+
+header .headerBackground .bgHeader .navigationBar .navBarList li a {
+  color: #0c0c0c;
+  font-family: 'yekan';
+  text-decoration: none;
+  padding: 10px;
+}
+
+header .headerBackground .bgHeader .navigationBar .navBarList li:last-child {
+  border-left: none;
+}
+
+header .headerBackground .bgHeader .navigationBar .hamburger {
+  display: none;
+}
+
+header .headerBackground .bgHeader .navigationBar .navLastPart {
+  cursor: pointer;
+}
+
+header .headerBackground .bgHeader .navigationBar .navLastPart i {
+  color: #327ab6;
+}
+
+header .headerBackground .bgHeader .navigationBar .navLastPart:hover i {
+  color: #213f57;
+}
+
+@media only screen and (max-width: 767px) {
+  header .headerBackground .bgHeader .navigationBar .navBarList {
+    display: none;
+  }
+  header .headerBackground .bgHeader .navigationBar .hamburger {
+    display: block;
+    margin-right: auto;
+  }
+}

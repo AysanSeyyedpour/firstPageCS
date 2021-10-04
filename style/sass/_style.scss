@@ -1,0 +1,348 @@
+body,
+html {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'yekan';
+}
+
+header {
+    .headerBackground {
+        background-image: url(/images&icons/image-slider.jpg);
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 670px;
+        .bgHeader {
+            width: 100%;
+            background-color: rgba(255, 255, 255, .5);
+            border-top: 4px solid rgb(216, 16, 16);
+            .navigationBar {
+                height: 85px;
+                width: 100%;
+                align-items: center;
+                position: relative;
+                margin: auto;
+                @include MediaQuery($lg) {
+                    flex-wrap: nowrap;
+                }
+                .navBarList {
+                    float: right;
+                    display: block;
+                    align-items: center;
+                    margin-top: 15px;
+                    margin-right: 70px;
+                    li {
+                        display: inline;
+                        border-left: 1px solid black;
+                        a {
+                            color: rgb(12, 12, 12);
+                            font-family: 'yekan';
+                            text-decoration: none;
+                            padding: 10px;
+                        }
+                    }
+                    li:hover a {
+                        color: rgb(182, 7, 7);
+                    }
+                    li:last-child {
+                        border-left: none;
+                    }
+                    @include MediaQuery($lg) {
+                        display: none;
+                    }
+                }
+                .hamburger {
+                    display: none;
+                    @include MediaQuery($lg) {
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+                .navLastPart {
+                    cursor: pointer;
+                    margin-right: 50px;
+                    i {
+                        color: #327ab6;
+                    }
+                    @include MediaQuery($lg) {
+                        clear: both;
+                        margin-right: 0px;
+                    }
+                }
+                .navLastPart:hover i {
+                    color: #213f57;
+                }
+            }
+        }
+        .usefulPoints {
+            position: relative;
+            top: 550px;
+            left: 0;
+            right: 0;
+            margin-bottom: 0%;
+            .usefulPointsItems {
+                width: 60px;
+                height: 60px;
+                border: 3px solid white;
+                border-radius: 100%;
+                background-color: #cccccc;
+                box-shadow: 0px 3px 3px -3px #101010;
+                cursor: pointer;
+                z-index: 1;
+                a {
+                    position: relative;
+                    .img1 {
+                        position: absolute;
+                        top: 14px;
+                        right: 14px;
+                    }
+                    .img2 {
+                        position: absolute;
+                        top: 12px;
+                        right: 12px;
+                    }
+                    .img3 {
+                        position: absolute;
+                        top: 13px;
+                        right: 16px;
+                    }
+                }
+            }
+            .usefulPointsItems:hover {
+                background-color: #e0161d;
+            }
+        }
+        .bgAboutUs {
+            width: 100%;
+            position: relative;
+            top: 520px;
+            background-image: url(/images&icons/about-us-background.png);
+            background-color: white;
+            @include MediaQuery($xl) {
+                height: 600px;
+            }
+            .aboutUs {
+                margin-top: 0;
+                height: 370px;
+                margin: auto;
+                padding: 30px;
+                position: relative;
+                top: 50px;
+                // margin-right: 8vw;
+                .firstColAboutUs {
+                    margin-top: -50px;
+                    // margin-right: 40px;
+                    .head {
+                        padding-bottom: 20px;
+                        .line {
+                            width: 45px;
+                            height: 4px;
+                            background-color: #e0161d;
+                        }
+                    }
+                    p {
+                        font-size: .9rem;
+                        color: rgb(37, 37, 37);
+                        padding-bottom: 10px;
+                    }
+                    button {
+                        background-color: rgb(238, 238, 238);
+                        border-radius: 20px;
+                    }
+                    button:hover {
+                        background-color: rgb(233, 233, 233);
+                    }
+                }
+                .rowSecondPart {
+                    @include MediaQuery($lg) {
+                        margin-top: 50px;
+                    }
+                    .secondColAboutUs {
+                        margin-top: -20px;
+                        img {
+                            @include MediaQuery($lg) {
+                                width: 50%;
+                                height: 50%;
+                            }
+                        }
+                        .text {
+                            font-size: .8rem;
+                            @include MediaQuery($lg) {
+                                font-size: .8rem;
+                            }
+                            span {
+                                font-size: 2rem;
+                                @include MediaQuery($xl) {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                    .thirdColAboutUs {
+                        margin-top: -60px;
+                        img {
+                            @include MediaQuery($lg) {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section {
+    background-image: url(/images&icons/services-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    position: relative;
+    @include MediaQuery($sm) {
+        height: 1000px;
+    }
+    .inner1 {
+        position: absolute;
+        top: 120px;
+        right: 10%;
+        left: 10%;
+        @include MediaQuery($lg) {
+            top: 100px;
+        }
+        .items {
+            float: right;
+            align-items: center;
+            cursor: pointer;
+            align-items: center;
+            align-content: center;
+            .imageBg {
+                width: 90px;
+                height: 90px;
+                background-color: white;
+                border-radius: 50px;
+                position: relative;
+                img {
+                    position: absolute;
+                    top: 30px;
+                    right: 31px;
+                }
+            }
+            p {
+                font-size: 1.2rem;
+                padding-top: 20px;
+                font-weight: 500;
+                @include MediaQuery($lg) {
+                    font-size: .85rem;
+                }
+            }
+        }
+        .items:hover {
+            .imageBg {
+                outline: 2px solid white;
+                outline-offset: 4px;
+            }
+            p {
+                color: white;
+            }
+        }
+    }
+}
+
+.part-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.customerPart {
+    border-bottom: 1px solid #cccc;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    .title {
+        margin: auto;
+        .customerRedLine {
+            width: 35px;
+            height: 3.5px;
+            background-color: #b8191e;
+            position: relative;
+            left: -75px;
+        }
+    }
+    .Carousel {
+        margin: 5rem auto;
+        width: 100%;
+        .inner {
+            background-image: url(/images&icons/customer.png);
+            background-repeat: no-repeat;
+            background-attachment: inherit;
+            overflow-x: hidden;
+            height: 90px;
+            width: 65vw;
+            margin: auto;
+        }
+        img {
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    margin: 5rem auto 0px;
+    .contactUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 3.5rem;
+        h2 {
+            margin: auto;
+        }
+        .footerRedLine {
+            width: 58px;
+            height: 4px;
+            background-color: #e0161d;
+            position: relative;
+            right: 48%;
+            top: 2px;
+            margin-top: 3px;
+        }
+    }
+    .footerMiddlePart {
+        background-image: url(/images&icons/contact-us-background.png);
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        height: 100%;
+        .innerTitle {
+            margin-right: -30px;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .footerLastPart1 {
+        margin-bottom: 0%;
+        width: 100%;
+        background-color: #f3f3f3;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        p {
+            color: #9b9b9b;
+            padding: 10px;
+            font-size: .92rem;
+            span {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .footerLastPart2 {
+        margin-bottom: 0%;
+        width: 100%;
+        height: 5px;
+        background-color: #e0161d;
+    }
+}
