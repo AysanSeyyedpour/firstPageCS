@@ -83,11 +83,72 @@ header .headerBackground .bgHeader .navigationBar .navLastPart i {
 header .headerBackground .bgHeader .navigationBar .navLastPart:hover i {
   color: #213f57;
 }
-header .headerBackground .usefulPoints {
+header .headerBackground .back {
+  background-color: rgba(255, 255, 255, 0.979);
+  width: 237.5px;
   position: relative;
-  top: 550px;
+  right: 27vw;
+  top: -5px;
+  display: none;
+}
+header .headerBackground .back .row {
+  cursor: pointer;
+  width: 230px;
+  align-items: center;
+  font-family: "yekan";
+}
+header .headerBackground .back .row .cBorder {
+  border-right: 1px solid black;
+}
+header .headerBackground .back .row .items:hover {
+  background-color: #77b1e0e5;
+  color: #e0161d;
+}
+header .headerBackground .projectBar {
+  position: relative;
+  top: -292px;
+  right: 34vw;
+  display: none;
+}
+header .headerBackground .projectBar ul li {
+  padding: 1rem;
+  font-family: "yekan";
+  cursor: pointer;
+}
+header .headerBackground .projectBar ul li:hover {
+  background-color: #66ade4e5;
+  color: #e0161d;
+}
+header .headerBackground .flagBar {
+  position: relative;
+  top: -495px;
+  right: 81vw;
+  display: none;
+}
+header .headerBackground .flagBar ul {
+  border-radius: 10px;
+  background-color: #d4d1d1bb;
+}
+header .headerBackground .flagBar ul li {
+  padding: 0.5rem;
+  font-family: "yekan";
+  cursor: pointer;
+  align-items: center;
+  background-color: #f6f3f3;
+  border-radius: 10px;
+}
+header .headerBackground .flagBar ul li img {
+  margin-right: 13px;
+}
+header .headerBackground .flagBar ul li:hover {
+  background-color: #d3d4d4e5;
+}
+header .headerBackground .usefulPoints {
+  position: absolute;
+  top: 590px;
   left: 0;
   right: 0;
+  z-index: 1;
   margin-bottom: 0%;
 }
 header .headerBackground .usefulPoints .usefulPointsItems {
@@ -127,6 +188,8 @@ header .headerBackground .bgAboutUs {
   top: 520px;
   background-image: url(/images&icons/about-us-background.png);
   background-color: white;
+  z-index: 1;
+  margin-top: 50px;
 }
 @media only screen and (max-width: 992px) {
   header .headerBackground .bgAboutUs {
@@ -143,6 +206,7 @@ header .headerBackground .bgAboutUs .aboutUs {
 }
 header .headerBackground .bgAboutUs .aboutUs .firstColAboutUs {
   margin-top: -50px;
+  font-family: "yekan";
 }
 header .headerBackground .bgAboutUs .aboutUs .firstColAboutUs .head {
   padding-bottom: 20px;
@@ -210,23 +274,23 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 800px;
+  height: 900px;
   position: relative;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 992px) {
   section {
-    height: 1000px;
+    height: 1390px;
   }
 }
 section .inner1 {
   position: absolute;
-  top: 120px;
+  top: 420px;
   right: 10%;
   left: 10%;
 }
 @media only screen and (max-width: 768px) {
   section .inner1 {
-    top: 100px;
+    top: 620px;
   }
 }
 section .inner1 .items {
