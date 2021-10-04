@@ -1,8 +1,0 @@
-@media only screen and(max-width: 768px) {
-    header .headerBackground .bgHeader .navigationBar .navBarList {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
-}
